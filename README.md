@@ -1,3 +1,10 @@
 # jiipeefin.github.io
 
-Yksinkertainen sivu, jonka tarkoitus on koota muut asiat alleen. 
+Tavoite:    
+    Yksinkertainen sivusto, joka toimii käyttäjän perusportfoliona sekä linkkien keruupaikkana.
+    Myöhemmin koontina erilaisista mielenkiinnon kohteista: tilastoja, uutisia,...
+Suunnitteluperuste: 
+    yksinkertaisuus, retro
+Graafinen ohje: 
+    ei vielä ole
+
