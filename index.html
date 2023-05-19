@@ -1,16 +1,33 @@
+<!-- Pääsivu. Tämä versio pääsivusta on runsaasti kommentoitu. Koodin muotoillussa olen pyrkinyt käyttämään yleisiä luettavuuden ohjeita, mutta joissa asioissa olen tehnyt erilaisen valinnan. -->
+<!-- Sivulle voi kirjautua linkillä: https://jiipeefin.github.io/ 
+     Huomaa että sivusto päivittyy muutaman minuutin viiveellä. Erityisesti kotisivu.-->
+
+<!-- Ei pakollinen DOCTYPE:n määrittely. Tässä kohtaa voidaan kertoa selaimelle, että sivu halutaan lukea esim. HTML3-merkintöinä. -->
 <!DOCTYPE html>
+
+<!-- HTML-osion alku. -->
 <html lang="fi">
+
 <!-- Tämän sivuston tarkoituson toimia helppona ja yksikertaisena esimerkkinä portfolio-sivuston toteuttamisesta Front End-kehittäjille. 
 Tarkoitus on myös lisätä tälle verkkosivulle opiskelumateriaaleja eri aiheista. -->
 <head>
+    <!-- Metatiedot selaimia, hakukoneita ja kehittäjiä varten. -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="My personal Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
+    <meta name="author" content="Juha-Pekka Finnilä">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sivun yläikonin asettaminen. Valittu ikoni on itsetehty. Käyttöoikeus vain itselläni. 😄 -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <!-- Sivun nimi selaimen välilehtiä varten. -->
     <title>JiiPeen portfolio</title>
+    <!-- Tarpeelliset tyylitiedostot virtaavassa järjestyksessä -->
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
+<!-- Todellinen näkyvä verkkosivu. Pyritty rakentamaan mahdollisimman semanttisena ja selkeänä. -->
 <body>
-    <!-- Sivun yläosa eli header osio-->
+    <!-- Sivun yläosa eli header osio. -->
     <header>
         <h1>Oma portfolio uusi versio</h1>
     </header>
