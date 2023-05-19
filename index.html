@@ -1,4 +1,4 @@
-<!-- Pääsivu. Tämä versio pääsivusta on runsaasti kommentoitu. Koodin muotoillussa olen pyrkinyt käyttämään yleisiä luettavuuden ohjeita, mutta joissa asioissa olen tehnyt erilaisen valinnan. -->
+<!-- Pääsivu. Tämä versio pääsivusta on tarpeettoman runsaasti kommentoitu. Koodin muotoillussa olen pyrkinyt käyttämään yleisiä luettavuuden ohjeita, mutta joissa asioissa olen tehnyt erilaisen valinnan. -->
 <!-- Sivulle voi kirjautua linkillä: https://jiipeefin.github.io/ 
      Huomaa että sivusto päivittyy muutaman minuutin viiveellä. Erityisesti kotisivu.-->
 
@@ -22,28 +22,38 @@ Tarkoitus on myös lisätä tälle verkkosivulle opiskelumateriaaleja eri aiheis
     <!-- Sivun nimi selaimen välilehtiä varten. -->
     <title>JiiPeen portfolio</title>
     <!-- Tarpeelliset tyylitiedostot virtaavassa järjestyksessä -->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/styles/perustyyli.css">
 </head>
 
 <!-- Todellinen näkyvä verkkosivu. Pyritty rakentamaan mahdollisimman semanttisena ja selkeänä. -->
 <body>
     <!-- Sivun yläosa eli header osio. -->
     <header>
-        <h1>Oma portfolio uusi versio</h1>
+        <h1>JiiPee <br>Finnilä</h1>
     </header>
       
     <nav>
       <ul>
-        <li><a href="#about">Tietoa minusta</a></li>
+        <li><a href="#minusta">Tietoa minusta</a></li>
         <li><a href="#projects">Projektit</a></li>
-        <li><a href="#contact">Ota yhteyttä</a></li>
+        <li><a href="#yhteys">Ota yhteyttä</a></li>
       </ul>
     </nav>
       
     
-    <section id="about">
+    <section id="minusta">
       <h2>Tietoa minusta</h2>
-      <p>Tähän voit kirjoittaa tietoa itsestäsi ja osaamisestasi.</p>
+      <article>
+        <p>
+          Olen parantumaton järjestöjäärä, teeintoilija, kirjojen lukija (erityisesti spefi, filosofia,...) ja joka-paikan-höylä. Mitään en osaa hyvin, mutta olen kaikesta kiinnostunut ja osaan edes jotain melkein kaikesta. Harrastan useita asioita. Ja kulutan aikaani tutustumalla uusiin sekä palaamalla toisinaan vanhojen harrastusteni pariin.
+        </p>
+      </article>
+      <article>
+        <p>
+          Ylläpidän omaa osaamistani tekemällä erilaisia projekteja, osallistumalla ammattitaidon kehittämiseen sekä suorittamalla itseopiskelu kursseja ja sertifiointeja. Suurin osa sertifioinneistani olen suorittanut nykyisellä työnantajallani Microsoftin ympäristöistä sekä työkaluista (mm. MIEE, <a href="https://www.credly.com/badges/c656a163-3726-49b3-b1be-241eccbd434b/linked_in_profile">MCE</a>, MOS: Expert (<a href="https://www.credly.com/badges/8a0edcc1-4081-4961-8554-299d3a714c66/linked_in_profile">Word</a>, <a href="https://www.credly.com/badges/beb860b6-84a6-44ad-9270-cf2853abea3e/linked_in_profile">Expert</a>)).
+        </p>
+      </article>
     </section>
       
     <section id="projects">
@@ -58,14 +68,27 @@ Tarkoitus on myös lisätä tälle verkkosivulle opiskelumateriaaleja eri aiheis
       </div>
     </section>
       
-    <section id="contact">
+    <section id="yhteys">
       <h2>Ota yhteyttä</h2>
       <p>Yhteystietosi tai yhteydenottolomake.</p>
     </section>
     
-    <!-- Sivun alaosa eli footer. Täällä on usein linkkilista ja sivun käyttöä helpottavat ohjeet. -->
+    <!-- Sivun alaosa (footer). Täällä on usein linkkejä ja yleistieto sivusta. -->
     <footer>
-      <p>&copy; 2023 Oma portfolio</p>
+      <div>
+        <h4>Juha-Pekka Finnilä</h4>
+        <p>&copy; 2023 Oma portfolio</p>
+      </div>
+      <!-- Sosiaalisen median ikonit ja linkit -->
+      <div>
+        <h4>Sosiaalisuus</h4>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/juhapekkafinnila/">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/jiipee_fin/">Instagram</a></li>
+          <li><a href="https://github.com/JiiPeeFin">Github</a></li>
+          <li><a href="https://www.credly.com/users/juha-pekka-finnila/">Credly</a></li>
+        </ul>
+      </div>
     </footer>
 </body>
 </html>
