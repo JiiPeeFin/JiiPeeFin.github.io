@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <form>
+        <input id="lueYksi" type="number" placeholder="0-9">
+        <input id="lueKaksi" type="number" placeholder="0-9">
+    </form>
+    <button id="nappi">plussaa</button>
+    <p id="tulostus"></p>
+
+    <script>
+        let nappi = document.querySelector("#nappi");
+        nappi.addEventListener("click", kirjoitaLuettu);
+        
+        function kirjoitaLuettu() {
+            let lukuYksi = parseInt(document.getElementById("lueYksi").value);
+            let lukuKaksi = Number(document.getElementById("lueKaksi").value);
+            document.querySelector("#tulostus").innerHTML = `${lukuYksi} + ${lukuKaksi} = ${lukuYksi+tyyppi+lukuKaksi}`;
+        }
+        
+    </script>
+</body>
+</html>
