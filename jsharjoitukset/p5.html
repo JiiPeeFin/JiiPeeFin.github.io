@@ -26,5 +26,24 @@
         }
         
     </script>
+
+
+    <form>
+        <input id="lueKolme" type="number" placeholder="0-9">
+    </form>
+    <button onclick="tulostaKertotaulu()" id="nappiKaksi">Kertotaulu</button>
+    <p id="tulostusKaksi"></p>
+
+    <script>
+        function tulostaKertotaulu(){
+            let lukuKolme = document.querySelector("#lueKolme").value
+            document.querySelector("#tulostusKaksi").innerHTML = "Tämä on "+lukuKolme+" kertotaulu: <br>"
+            for(let i = 0; i < 11; i++){
+                document.querySelector("#tulostusKaksi").innerHTML += i*lukuKolme+" "
+            }
+            document.querySelector("#nappiKaksi").style.visibility = "hidden"
+        }
+    </script>
+
 </body>
 </html>
