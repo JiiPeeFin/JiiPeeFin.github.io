@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="nimi" placeholder="Anna nimi">
+    </form>
+    <button onclick="luoOlio()">Luo Olio</button>
+    <button onclick="syötäOliota()">Ahmi!</button>
+    
+    <p id="tulostus">Tämä on hieno tamagochi</p>
+
+    <script>
+        function luoOlio(){
+            let annettuNimi = document.querySelector("#nimi").value
+            //luodaan oikeasti olio
+            olio = {
+                nimi: annettuNimi,
+                paino: Math.floor(Math.random()*51+40)
+            }
+            //Tarkistetaan luotiinko olio
+            let tulos = "Oliota ei ole luotu"
+            if(olio.nimi != ""){
+                tulos = "Olio on luotu ja sen nimi on "+olio.nimi+" ja se painaa "+olio.paino+" kilogramma"
+            }
+            document.querySelector("#tulostus").innerHTML = tulos
+        }
+
+        function syötäOliota(){
+            let määrä = 5
+            olio.paino = olio.paino + määrä
+            document.querySelector("#tulostus").innerHTML += "<br>"+olio.nimi+ " ahmii herkkuja "+määrä+ " verran ja painaa nyt "+olio.paino
+        }
+    </script>
+</body>
+</html>
