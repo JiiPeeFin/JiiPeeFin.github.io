@@ -1,43 +1,22 @@
-/* Retrotyylinen css tiedosto */
+/* 
+  Retrotyylinen css tiedosto.
+
+*/
 :root {
-  --main-bg-color: lime;
+  --main-bg-color: rgb(0, 132, 255);
   --main-color: black;
 }
 
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: var(--main-bg-color);
   color: var(--main-color);
 }
   
-header {
-  background-color: #f26722;
-}
-  
-nav {
-  background-color: #f2cc8f;
-}
+
   
 
-/* Flexbox rakenne section + flexchild article */
-section {
-  display: flexbox;
-  margin-top: 20px;
-}
-  
-article {
-  
-}
 
-
-.project {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #f2cc8f;
-  background-color: #f2f2f2;
-}
   
 /* Footer osio. Sisältää linkit, yhteystiedot ja sivurakenteen. */
 
@@ -46,5 +25,9 @@ footer {
   color: #000;
   width: 100%;
   padding: 1rem;
+}
+
+footer div {
+  
 }
 
